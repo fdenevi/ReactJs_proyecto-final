@@ -1,0 +1,56 @@
+#navbar {
+    background-color: rgb(253, 241, 180);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navlink {
+    font-family: "Amatic SC", cursive;
+}
+  
+#icons {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+  
+#iconMenu {
+    font-size: 2em;
+}
+  
+#navbarToggle {
+    border: none;
+}
+  
+@media (max-width: 894px) {
+    #navbarnav {
+      display: flex;
+      flex-direction: row;
+      gap: 2em;
+    }
+
+    #navlink {
+      font-size: 2em;
+      padding: 0;
+    }
+
+    #iconCarrito {
+      font-size: 2.5em;
+    }
+}
+
+@media (min-width: 895px) {
+    #navbarnav {
+      display: flex;
+      gap: 4em;
+    }
+
+    #navlink {
+        font-size: 3em;
+    }
+
+    #iconCarrito {
+        font-size: 3.5em;
+    }
+}
