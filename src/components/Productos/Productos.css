@@ -1,0 +1,46 @@
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleProds{
+    text-align: center;
+}
+
+
+
+@media (max-width: 894px) {
+    #cardProds {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .titleProds{
+        font-size: 2em;
+    }
+    
+    .btnCardWidget{
+        font-size: 1.5em;
+    }
+
+}
+
+@media (min-width: 895px) {
+    #cardProds {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 5em;
+    }
+
+    .titleProds{
+        font-size: 2.5em;
+    }
+    
+    .btnCardWidget{
+        font-size: 2em;
+    }
+}

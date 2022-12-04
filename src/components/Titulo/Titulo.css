@@ -1,32 +1,32 @@
-#titulo {
+#title {
     text-align: center;
     padding: 1em 1em 0 1em;
     color: #d5e33f;
     font-family: 'Cinzel Decorative', cursive;
 }
 
-p{
+#subtitle{
     text-align: center;
     font-family: 'Amatic SC', cursive;
 }
 
 @media (max-width: 894px) {
-    #titulo {
+    #title {
         font-size: 4em;
     }
     
-    p{
+    #subtitle{
         font-size: 2em;
         padding: 1em;
     } 
 }
 
 @media (min-width: 895px) {
-    #titulo {
+    #title {
         font-size: 6em;
     }
     
-    p{
+    #subtitle{
         font-size: 3em;
         padding: 1em 5em;
     } 
