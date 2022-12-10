@@ -9,7 +9,6 @@
 }
 
 
-
 @media (max-width: 894px) {
     #cardProds {
         display: flex;
@@ -35,7 +34,7 @@
         justify-content: center;
         gap: 5em;
     }
-
+    
     .titleProds{
         font-size: 2.5em;
     }

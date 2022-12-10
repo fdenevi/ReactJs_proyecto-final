@@ -7,6 +7,16 @@
 
 #navlink {
     font-family: "Amatic SC", cursive;
+    text-decoration: none;
+    color: black;
+}
+
+#navlink:hover {
+    color: grey;
+}
+
+#navlink:active {
+    color: #d5e33f;
 }
   
 #icons {

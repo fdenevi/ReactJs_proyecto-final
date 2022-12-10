@@ -4,6 +4,7 @@ import CartWidget from '../CartWidget/CartWidget';
 import logo from '../img/logo_react.png'
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse'
 import './NavBar.css'
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -12,21 +13,21 @@ const NavBar = () => {
     <Navbar collapseOnSelect expand="lg" id="navbar">
         <Container>
             <div className='col-1'>
-                <a href="#home"><img src={logo} alt="logo" className="img-fluid w-100"/></a>   
+                <NavLink to='/' href="#home"><img src={logo} alt="logo" className="img-fluid w-100"/></NavLink> 
             </div>
 
             <div>
                 <NavbarCollapse id="responsive-navbar-nav">
                         <Nav className="me-auto" id="navbarnav">
-                            <Nav.Link href="#productos" id="navlink">Productos</Nav.Link>
-                            <Nav.Link href="#dudas" id="navlink">Dudas</Nav.Link>
-                            <Nav.Link href="#contacto" id="navlink">Contacto</Nav.Link>
+                            <NavLink to='/' id="navlink">Productos</NavLink>
+                            <NavLink to='/dudas' id="navlink">Dudas</NavLink>
+                            <NavLink to='/contacto' id="navlink">Contacto</NavLink>
                         </Nav>
                 </NavbarCollapse>
             </div>
 
             <div id="icons">
-                < CartWidget/>
+                <CartWidget/>
 
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" id="navbarToggle"><FaChevronLeft id="iconMenu"/></Navbar.Toggle>
             </div>
