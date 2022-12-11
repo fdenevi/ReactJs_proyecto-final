@@ -1,5 +1,5 @@
-import { FaPrayingHands, FaProcedures } from "react-icons/fa"
 import ItemCount from "../ItemCount/ItemCount"
+import './ItemDetail.css'
 
 const ItemDetail = ({product}) => {
 
@@ -7,8 +7,11 @@ const ItemDetail = ({product}) => {
 
   return (
     <>
-      <div>
-        <h2>{product.name}</h2>
+      <div className="container" id="cartItemDetail">
+        <h2 className="nameProduct">{product.name}</h2>
+        <img src={product.foto} alt="imagen producto" className="img-fluid imgProduct" />
+        <p className="descriptionProduct">{product.descripcion}</p>
+        <p className="priceProduct">${product.price}</p>
       </div>
 
       <div>

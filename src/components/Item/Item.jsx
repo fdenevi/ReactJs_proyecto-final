@@ -7,7 +7,7 @@ const Item = ({prods}) => {
 
   return (
     <div className="cards">
-        <img src={prods.foto} alt="img producto" />
+        <img src={prods.foto} alt="img producto" className="img-fluid" />
         <p className="titleProds">{prods.name}</p>
         <p className="price">${prods.price * iva}</p>
         <Link to={`/detail/${prods.id}`} className="btnMasDetalles">Mas detalles</Link>

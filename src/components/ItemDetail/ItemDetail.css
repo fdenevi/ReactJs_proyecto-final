@@ -1,0 +1,45 @@
+.nameProduct{
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    padding: 1em;
+}
+
+.descriptionProduct{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    padding: 1em;
+}
+
+.priceProduct{
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+
+@media (max-width: 894px) {
+    .nameProduct{
+        font-size: 3em;
+    }
+
+    .descriptionProduct{
+        font-size: 2.5em;
+    }
+
+    .priceProduct{
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 895px) {
+    .nameProduct{
+        font-size: 4em;
+    }
+
+    .descriptionProduct{
+        font-size: 3em;
+    }
+
+    .priceProduct{
+        font-size: 4em;
+    }
+}

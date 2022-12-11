@@ -10,7 +10,7 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" id="navbar">
+    <Navbar collapseOnSelect expand="lg" id="navbar" className="sticky-top">
         <Container>
             <div className='col-1'>
                 <NavLink to='/' href="#home"><img src={logo} alt="logo" className="img-fluid w-100"/></NavLink> 

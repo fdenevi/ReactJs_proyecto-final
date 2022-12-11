@@ -11,18 +11,13 @@
     display: flex;
     gap: 2em;
 }
+
 .btnContador{
     width: 50%;
     height: 50%;
     border-radius: 50%;
     font-size: 3em;
     background-color: #d5e33f;
-}
-.btnContadorSuma{
-    padding: 0 0.4em;
-}
-.btnContadorResta{
-    padding: 0 0.5em;
 }
 .btnContador:hover{
     background-color: #9a70b0;
@@ -31,6 +26,13 @@
 .btnContador:active{
     background-color: rgb(253, 241, 180);
     color: black;
+}
+
+.btnContadorSuma{
+    padding: 0 0.4em;
+}
+.btnContadorResta{
+    padding: 0 0.5em;
 }
 
 
