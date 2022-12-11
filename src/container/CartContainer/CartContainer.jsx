@@ -2,7 +2,9 @@
 
 const CartContainer = () => {
   return (
-    <div>CartContainer</div>
+    <div className="container">
+      CartContainer
+    </div>
   )
 }
 

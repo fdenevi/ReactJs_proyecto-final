@@ -5,6 +5,11 @@
     align-items: center;
 }
 
+#navbarnav {
+    display: flex;
+    flex-direction: row;
+}
+
 #navlink {
     font-family: "Amatic SC", cursive;
     text-decoration: none;
@@ -33,8 +38,6 @@
   
 @media (max-width: 894px) {
     #navbarnav {
-      display: flex;
-      flex-direction: row;
       gap: 2em;
     }
 
@@ -50,7 +53,6 @@
 
 @media (min-width: 895px) {
     #navbarnav {
-      display: flex;
       gap: 4em;
     }
 

@@ -7,7 +7,6 @@ import './NavBar.css'
 import { NavLink } from 'react-router-dom';
 
 
-
 const NavBar = () => {
   return (
     <Navbar collapseOnSelect expand="lg" id="navbar" className="sticky-top">
@@ -18,11 +17,11 @@ const NavBar = () => {
 
             <div>
                 <NavbarCollapse id="responsive-navbar-nav">
-                        <Nav className="me-auto" id="navbarnav">
-                            <NavLink to='/' id="navlink">Productos</NavLink>
-                            <NavLink to='/dudas' id="navlink">Dudas</NavLink>
-                            <NavLink to='/contacto' id="navlink">Contacto</NavLink>
-                        </Nav>
+                    <Nav className="me-auto" id="navbarnav">
+                        <NavLink to='/' id="navlink">Productos</NavLink>
+                        <NavLink to='/dudas' id="navlink">Dudas</NavLink>
+                        <NavLink to='/contacto' id="navlink">Contacto</NavLink>
+                    </Nav>
                 </NavbarCollapse>
             </div>
 

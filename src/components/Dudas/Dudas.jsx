@@ -2,7 +2,7 @@ import './Dudas.css'
 
 const Dudas = () => {
   return (
-    <div className="container containerDudas">
+    <div className="container cartDudas">
       <div>
         <h1 className="titleDudas">Dudas</h1>
 
@@ -18,6 +18,9 @@ const Dudas = () => {
         <p className="text2Dudas">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, quas! Porro quidem doloremque itaque laborum a ullam, ex at voluptates aspernatur laboriosam distinctio consequatur, iure quod perspiciatis, voluptatem rem. Beatae.</p>
 
         <h2 className="subtitleDudas">Método de envio</h2>
+        <p className="text2Dudas">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias praesentium at error delectus, recusandae fugiat cumque quidem illo commodi tempore deleniti asperiores quo ad repellat nesciunt nostrum atque pariatur explicabo?</p>
+      
+        <h2 className="subtitleDudas">Cómo se cual es mi talle?</h2>
         <p className="text2Dudas">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias praesentium at error delectus, recusandae fugiat cumque quidem illo commodi tempore deleniti asperiores quo ad repellat nesciunt nostrum atque pariatur explicabo?</p>
       </div>
     </div>

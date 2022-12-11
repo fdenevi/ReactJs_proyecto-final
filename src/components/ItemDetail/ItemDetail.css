@@ -1,18 +1,29 @@
-.nameProduct{
+#cartItemDetail{
     text-align: center;
+    margin-bottom: 4em;
+}
+
+.nameProduct{
     font-family: 'Cinzel Decorative', cursive;
     padding: 1em;
 }
 
 .descriptionProduct{
-    text-align: center;
     font-family: 'Amatic SC', cursive;
     padding: 1em;
 }
 
+.titleTalle{
+    font-family: 'Amatic SC', cursive;
+}
+
+.size{
+    font-size: 2em;
+}
+
 .priceProduct{
-    text-align: center;
     font-family: 'Cinzel Decorative', cursive;
+    padding-top: 1em;
 }
 
 
@@ -23,6 +34,10 @@
 
     .descriptionProduct{
         font-size: 2.5em;
+    }
+
+    .titleTalle{
+        font-size: 2em;
     }
 
     .priceProduct{
@@ -37,6 +52,10 @@
 
     .descriptionProduct{
         font-size: 3em;
+    }
+
+    .titleTalle{
+        font-size: 2.5em;
     }
 
     .priceProduct{

@@ -1,0 +1,82 @@
+#cartContacto{
+    margin-bottom: 4em;
+}
+
+.titleContacto{
+    text-align: center;
+    padding: 1em 1em 0 1em;
+    color: #d5e33f;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+}
+
+.titleForm{
+    font-family: 'Amatic SC', cursive;
+    padding-top: 1em;
+}
+
+.btnEnviar{
+    margin-top: 2em;
+    font-family: 'Amatic SC', cursive;
+    padding: 0.3em;
+    border-radius: 1em;
+    background-color: #9a70b0;
+    color: white;
+}
+.btnEnviar:hover{
+    background-color:#d5e33f;
+    color: black;
+}
+.btnEnviar:active{
+    background-color: rgb(253, 241, 180);
+    color: black;
+}
+
+
+@media (max-width: 894px) {
+    .titleContacto{
+        font-size: 4em;
+    }
+
+    #form{
+        align-items: center;
+    }
+
+    .titleForm{
+        font-size: 3em;
+    }
+
+    .inputForm{
+        font-size: 2em;
+    }
+
+    .btnEnviar{
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 895px) {
+    .titleContacto{
+        font-size: 6em;
+    }
+
+    #form{
+        align-items: flex-start;
+    }
+
+    .titleForm{
+        font-size: 4em;
+    }
+
+    .inputForm{
+        font-size: 3em;
+    }
+
+    .btnEnviar{
+        font-size: 3em;
+    }
+}
