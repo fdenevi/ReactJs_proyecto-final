@@ -1,0 +1,33 @@
+.titleError{
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+    padding: 1em 0 0 0;
+    color: red;
+}
+
+.subtitleError{
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+
+}
+
+
+@media (max-width: 894px) {
+    .titleError{
+        font-size: 4em;
+    }
+
+    .subtitleError{
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 895px) {
+    .titleError{
+        font-size: 6em;
+    }
+
+    .subtitleError{
+        font-size: 5em;    
+    }
+}

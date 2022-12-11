@@ -1,0 +1,79 @@
+.containerDudas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.titleDudas{
+    text-align: center;
+    padding: 1em 1em 0 1em;
+    color: #d5e33f;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.textDudas{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+}
+
+.subtitleDudas{
+    color: #9a70b0;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.text2Dudas{
+    font-family: 'Amatic SC', cursive;
+}
+
+
+@media (max-width: 894px) {
+    .containerDudas{
+        gap: 3em;
+    }
+
+    .titleDudas{
+        font-size: 4em;
+    }
+
+    .textDudas{
+        font-size: 2em;
+        padding: 0 1em;
+    }
+
+    .subtitleDudas{
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    .text2Dudas{
+        text-align: center;
+        font-size: 1.7em;
+        padding: 0 1em 1em 1em;
+    }
+}
+
+@media (min-width: 895px) {
+    .containerDudas{
+        gap: 8em;
+    }
+
+    .titleDudas{
+        font-size: 6em;
+    }
+
+    .textDudas{
+        font-size: 3em;
+    }
+
+    .subtitleDudas{
+        text-align: left;
+        font-size: 4em;
+    }
+
+    .text2Dudas{
+        text-align: left;
+        font-size: 2.3em;
+        padding: 0 0 1em 0;
+    }
+}

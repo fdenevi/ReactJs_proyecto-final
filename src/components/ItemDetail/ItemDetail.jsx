@@ -3,6 +3,7 @@ import './ItemDetail.css'
 
 const ItemDetail = ({product}) => {
 
+  const iva = 1.21
   const onAdd = (cantidad) => console.log('Cantidad de productos: ', cantidad)
 
   return (
@@ -11,7 +12,7 @@ const ItemDetail = ({product}) => {
         <h2 className="nameProduct">{product.name}</h2>
         <img src={product.foto} alt="imagen producto" className="img-fluid imgProduct" />
         <p className="descriptionProduct">{product.descripcion}</p>
-        <p className="priceProduct">${product.price}</p>
+        <p className="priceProduct">${product.price * iva}</p>
       </div>
 
       <div>
