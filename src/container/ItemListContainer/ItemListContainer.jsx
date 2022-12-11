@@ -3,6 +3,7 @@ import { Spinner } from "react-bootstrap"
 import { gFetch } from "../../helpers/gfetch"
 import ItemList from "../../components/ItemList/ItemList"
 import Titulo from "../../components/Titulo/Titulo"
+import './ItemListContainer.css'
 
 
 const ItemListContainer = () => {
@@ -23,9 +24,9 @@ const ItemListContainer = () => {
         <Titulo />
         
         <div className='container' id= "cardProds">
-            {loading ?  <div>
-                          <p>Cargando productos</p>
-                          <Spinner animation="grow" />
+            {loading ?  <div id="cardLoading">
+                          <p className="loading">Cargando productos</p>
+                          <Spinner animation="grow" className="spinner"/>
                         </div> 
             : <ItemList products={products}/>
             }       

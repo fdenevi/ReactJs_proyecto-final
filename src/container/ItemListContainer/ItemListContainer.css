@@ -1,0 +1,40 @@
+#cardLoading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loading{
+    font-family: 'Amatic SC', cursive;
+}
+
+.spinner{
+    color: #9a70b0;
+}
+
+
+@media (max-width: 894px) {
+    #cardProds {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .loading{
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 895px) {
+    #cardProds {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 5em;
+    }
+    
+    .loading{
+        font-size: 3em;
+    }
+}

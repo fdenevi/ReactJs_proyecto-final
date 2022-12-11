@@ -10,11 +10,9 @@
     text-decoration: none;
     color: black;
 }
-
 #navlink:hover {
-    color: grey;
+    color: #9a70b0;
 }
-
 #navlink:active {
     color: #d5e33f;
 }

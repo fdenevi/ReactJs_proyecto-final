@@ -6,7 +6,7 @@ const ItemDetail = ({product}) => {
   const onAdd = (cantidad) => console.log('Cantidad de productos: ', cantidad)
 
   return (
-    <div>
+    <>
       <div>
         <h2>{product.name}</h2>
       </div>
@@ -18,7 +18,7 @@ const ItemDetail = ({product}) => {
           onAdd={onAdd}
         />
       </div>
-    </div>
+    </>
   )
 }
 

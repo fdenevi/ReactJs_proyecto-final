@@ -1,7 +1,87 @@
 #contador{
     text-align: center;
-    font-size: 3em;
     display: flex;
-    justify-content: center;
-    gap: 3em;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* BOTONES RESTAR Y SUMAR */
+#btnContador{
+    display: flex;
+    gap: 2em;
+}
+.btnContador{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    font-size: 3em;
+    background-color: #d5e33f;
+}
+.btnContadorSuma{
+    padding: 0 0.4em;
+}
+.btnContadorResta{
+    padding: 0 0.5em;
+}
+.btnContador:hover{
+    background-color: #9a70b0;
+    color: white;
+}
+.btnContador:active{
+    background-color: rgb(253, 241, 180);
+    color: black;
+}
+
+
+/* VALOR NUMERICO CONTADOR */
+.valorContador{
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+
+/* BOTON AGREGAR AL CARRITO */
+.AgragarAcarrito{
+    font-family: 'Amatic SC', cursive;
+    padding: 0.3em;
+    border-radius: 3em;
+    background-color: #9a70b0;
+    color: white;
+}
+.AgragarAcarrito:hover{
+    background-color:#d5e33f;
+    color: black;
+}
+.AgragarAcarrito:active{
+    background-color: rgb(253, 241, 180);
+    color: black;
+}
+
+
+@media (max-width: 894px) {
+    .btnContador{
+        font-size: 2em;
+    }
+
+    .valorContador{
+        font-size: 3em;
+    }
+
+    .AgragarAcarrito{
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 895px) {
+    .btnContador{
+        font-size: 3em;
+    }
+
+    .valorContador{
+        font-size: 4em;
+    }
+
+    .AgragarAcarrito{
+        font-size: 3em;
+    }
 }

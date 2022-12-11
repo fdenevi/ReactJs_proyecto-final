@@ -2,43 +2,59 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: solid 0.3em #9a70b0;
+    border-radius: 3em;
+    padding: 2em;
 }
 
 .titleProds{
     text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+.price{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+.btnMasDetalles{
+    text-decoration: none;
+    background-color: grey;
+    border-radius: 3em;
+    padding: 0.3em;
+    color: black;
+    font-size: 1.5em;
+}
+.btnMasDetalles:hover{
+    color: #d5e33f;
 }
 
 
 @media (max-width: 894px) {
-    #cardProds {
-        display: flex;
-        flex-direction: column;
-        gap: 3em;
-    }
-
     .titleProds{
         font-size: 2em;
     }
-    
+
+    .price{
+        font-size: 2em;
+    }
+
     .btnMasDetalles{
         font-size: 1.5em;
     }
-
 }
 
 @media (min-width: 895px) {
-    #cardProds {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 5em;
-    }
-    
     .titleProds{
         font-size: 2.5em;
     }
-    
+
+    .price{
+        font-size: 2.5em;
+    }
+
     .btnMasDetalles{
         font-size: 2em;
     }
