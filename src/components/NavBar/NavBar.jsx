@@ -12,13 +12,16 @@ const NavBar = () => {
     <Navbar collapseOnSelect expand="lg" id="navbar" className="sticky-top">
         <Container>
             <div className='col-1'>
-                <NavLink to='/' href="#home"><img src={logo} alt="logo" className="img-fluid w-100"/></NavLink> 
+                <NavLink to='/'>
+                    <img src={logo} alt="logo" className="img-fluid w-100"/>
+                </NavLink> 
             </div>
 
             <div>
                 <NavbarCollapse id="responsive-navbar-nav">
                     <Nav className="me-auto" id="navbarnav">
-                        <NavLink to='/' id="navlink">Productos</NavLink>
+                        <NavLink to='/home' id="navlink">Home</NavLink>
+                        <NavLink to='/categoria/ss23' id="navlink">SS23</NavLink>
                         <NavLink to='/dudas' id="navlink">Dudas</NavLink>
                         <NavLink to='/contacto' id="navlink">Contacto</NavLink>
                     </Nav>

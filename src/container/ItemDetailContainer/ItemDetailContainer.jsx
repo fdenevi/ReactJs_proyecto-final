@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import Footer from '../../components/Footer/Footer'
 import ItemDetail from "../../components/ItemDetail/ItemDetail"
 import { gFetch } from '../../helpers/gFetch'
 import './ItemDetailContainer.css'
@@ -23,6 +24,9 @@ const ItemDetailContainer = () => {
       {loading ? <p className="cargando">Cargando...</p> 
         : <ItemDetail product={product}/>
       }
+      <div>
+        <Footer/>
+      </div>
     </>
   )
 }

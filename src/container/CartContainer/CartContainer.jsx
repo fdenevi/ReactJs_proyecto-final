@@ -1,9 +1,14 @@
+import Footer from "../../components/Footer/Footer"
 
 
 const CartContainer = () => {
   return (
-    <div className="container">
-      CartContainer
+    <div>
+      <div className="container">
+        CartContainer
+      </div>
+
+      <Footer />
     </div>
   )
 }

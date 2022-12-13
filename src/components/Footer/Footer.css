@@ -1,0 +1,27 @@
+#footer{
+    padding: 4em;
+    background-color: black;
+}
+
+.titleFooter{
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+
+.iconsFooter{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-size: 2em;
+    padding-top: 1em;
+}
+
+.icons{
+    text-decoration: none;
+    color: white;
+}
+.icons:hover{
+    color: #d5e33f;
+}
