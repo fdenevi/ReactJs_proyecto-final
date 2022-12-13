@@ -1,4 +1,5 @@
 import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa"
+import { Link } from "react-router-dom"
 import './Footer.css'
 
 
@@ -7,9 +8,9 @@ const Footer = () => {
     <div id="footer">
         <h1 className="titleFooter">Libra Shoes</h1>
         <div className="iconsFooter">
-            <a href="" className="icons"><FaFacebookF/></a>
-            <a href="" className="icons"><FaInstagram/></a>
-            <a href="" className="icons"><FaTiktok/></a>
+            <Link to='/facebook' className="icons"><FaFacebookF/></Link>
+            <Link to='/instagram' className="icons"><FaInstagram/></Link>
+            <Link to='/tiktok' className="icons"><FaTiktok/></Link>
             
             
             
