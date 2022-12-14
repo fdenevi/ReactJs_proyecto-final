@@ -1,0 +1,30 @@
+#comprar{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.comprar{
+    text-decoration: none;
+    background-color: grey;
+    border-radius: 3em;
+    padding: 0.3em;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.comprar:hover{
+    color: #d5e33f;
+}
+
+
+@media (max-width: 894px) {
+    .comprar{
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 895px) {
+    .comprar{
+        font-size: 2em;
+    }
+}

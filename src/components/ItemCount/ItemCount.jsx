@@ -6,12 +6,15 @@ const ItemCount = ({stock, initial, onAdd}) => {
     const [contador, setearContador] = useState(1)
     const agregarAlCarrito = () => onAdd(contador)
     
+    
+    // FUNCION SUMAR
     const sumar = () => {
         if(contador < stock){
           setearContador (contador + 1)
         }
       }
-    
+
+    // FUNCION RESTAR
     const restar = () => {
       if (contador > initial) {
         setearContador (contador - 1)

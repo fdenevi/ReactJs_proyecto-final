@@ -1,10 +1,25 @@
+import { useState } from "react"
+import { useCartContext } from "../../context/CartContext"
+import ButtonCart from "../ButtonCart/ButtonCart"
 import ItemCount from "../ItemCount/ItemCount"
+import OptionSelect from "../OptionSelect/OptionSelect"
+
 import './ItemDetail.css'
 
 const ItemDetail = ({product}) => {
 
   const iva = 1.21
-  const onAdd = (cantidad) => console.log('Cantidad de productos: ', cantidad)
+
+  const {addToCart, cartList} = useCartContext();
+  const [inputType, setInputType] = useState('button');
+
+
+  const onAdd = (cantidad) => {
+    console.log('Cantidad de productos: ', cantidad)
+    addToCart ({...product, cantidad})
+    setInputType('input')
+  }
+  
 
   return (
     <div id="cartItemDetail">
@@ -14,26 +29,21 @@ const ItemDetail = ({product}) => {
         <p className="descriptionProduct">{product.descripcion}</p>
 
         <h3 className="titleTalle">Cual es tu talle?</h3>
-        <form action="#">
-          <select name="size" className="size">
-            <option value="35">35</option>
-            <option value="36">36</option>
-            <option value="37">37</option>
-            <option value="38">38</option>
-            <option value="39">39</option>
-            <option value="40">40</option>
-          </select>
-        </form>
+        <OptionSelect />
 
         <p className="priceProduct">${product.price * iva}</p>
       </div>
 
       <div>
-        <ItemCount
-          stock={5}
-          initial={1}
-          onAdd={onAdd}
-        />
+        {
+          inputType === 'button' ? 
+            <ItemCount
+              stock={5}
+              initial={1}
+              onAdd={onAdd}
+            />
+          : <ButtonCart />     
+        }
       </div>
     </div>
   )

@@ -8,10 +8,13 @@ import Dudas from './components/Dudas/Dudas'
 import Contacto from './components/Contacto/Contacto'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Error from './components/Error/Error'
+import { CartContextProvider } from './context/CartContext'
 
 
 function App() {
   return (
+    <CartContextProvider>
+
     <BrowserRouter>
       <NavBar />
 
@@ -27,6 +30,8 @@ function App() {
       </Routes>    
 
     </BrowserRouter>
+
+    </CartContextProvider>
   )
 }
 
