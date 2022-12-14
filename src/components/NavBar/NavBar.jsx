@@ -1,7 +1,6 @@
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import { FaChevronLeft } from "react-icons/fa";
 import CartWidget from '../CartWidget/CartWidget';
-import logo from '../img/logo_react.png'
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse'
 import './NavBar.css'
 import { NavLink } from 'react-router-dom';
@@ -13,7 +12,7 @@ const NavBar = () => {
         <Container>
             <div className='col-1'>
                 <NavLink to='/'>
-                    <img src={logo} alt="logo" className="img-fluid w-100"/>
+                    <img src="/img/logo_react.png" alt="logo" className="img-fluid w-100"/>
                 </NavLink> 
             </div>
 
