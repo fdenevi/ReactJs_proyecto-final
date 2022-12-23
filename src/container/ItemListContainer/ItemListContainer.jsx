@@ -5,8 +5,7 @@ import ItemList from "../../components/ItemList/ItemList"
 import Titulo from "../../components/Titulo/Titulo"
 import './ItemListContainer.css'
 import Footer from "../../components/Footer/Footer"
-import { gFetch } from "../../helpers/gFetch"
-
+import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore'
 
 
 const ItemListContainer = () => {
@@ -14,20 +13,25 @@ const ItemListContainer = () => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
     const {categoriaId} = useParams()
-  
-    useEffect( () => {
-      if (categoriaId){
-          gFetch()
-          .then(resp => setProducts (resp.filter(products => products.categoria === categoriaId)))
-          .catch(err => console.log (err))
-          .finally(()=> setLoading (false))
+
+
+    useEffect (() => {
+      const db = getFirestore()
+      const queryCollection = collection(db, 'productos')
+      const queryFilter = query(queryCollection, where('categoria', '==', 'ss23'))
+
+      if(categoriaId){
+        getDocs(queryFilter)
+          .then (resp => setProducts (resp.docs.map (product => ({id: product.id, ...product.data() }) )))
+          .catch(err => console.log(err))
+          .finally(() => setLoading(false))
       } else {
-          gFetch()
-          .then(resp => setProducts (resp))
+        getDocs(queryCollection)
+          .then (resp => setProducts (resp.docs.map (product => ({id: product.id, ...product.data() }) )))
           .catch(err => console.log (err))
           .finally(()=> setLoading (false))
       }
-    }, [categoriaId] )
+    }, [categoriaId])
 
 
     return (

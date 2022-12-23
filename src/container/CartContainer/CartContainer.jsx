@@ -19,6 +19,7 @@ const CartContainer = () => {
             />
           )}
 
+          <button>vaciar carrito</button>
       </div>
 
       <Footer />

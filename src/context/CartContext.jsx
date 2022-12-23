@@ -26,6 +26,7 @@ const vaciarCarrito = () => setCartList([])
         vaciarCarrito
     }}>
         {children}
+
     </CartContext.Provider>
   )
 }

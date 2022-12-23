@@ -1,8 +1,8 @@
+import { doc, getDoc, getFirestore } from 'firebase/firestore'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Footer from '../../components/Footer/Footer'
 import ItemDetail from "../../components/ItemDetail/ItemDetail"
-import { gFetch } from '../../helpers/gFetch'
 import './ItemDetailContainer.css'
 
 
@@ -12,12 +12,17 @@ const ItemDetailContainer = () => {
   const [loading, setLoading] = useState (true)
   const {productoId} = useParams()
 
-  useEffect( () => {
-    gFetch(productoId)
-      .then(resp => setProduct(resp))
-      .catch(err => console.log(err))
-      .finally( ()=> setLoading (false))
-  }, [])
+
+  useEffect(() => {
+    const db = getFirestore()
+    const queryDoc = doc(db, 'productos', productoId)
+
+    getDoc(queryDoc)
+    .then(respuesta => setProduct ({id: respuesta.id, ...respuesta.data()}))
+    .catch(err => console.log(err))
+    .finally( ()=> setLoading (false))
+  })
+
 
   return (
     <>

@@ -3,7 +3,7 @@ let productos = [
     name: 'Amelie', 
     stock: 10, 
     price: 3400, 
-    foto: 'https://drive.google.com/file/d/1cm1_8vLbNllEZlF2l5DJSrAXOSYY5xj1/view?usp=sharing',
+    foto: '',
     descripcion:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis eum velit eaque cupiditate esse, dicta error fuga. Id et explicabo quia nobis optio. Voluptates ipsum alias assumenda cupiditate voluptatem excepturi!',
     categoria: 'ss23'},
 
@@ -11,7 +11,7 @@ let productos = [
     name: 'Wanda', 
     stock: 10, 
     price: 5600, 
-    foto:'https://drive.google.com/file/d/1wG3SJRY9QwNeeIRmPSc33zIjdsJ9A3he/view?usp=sharing', 
+    foto:'', 
     descripcion:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis eum velit eaque cupiditate esse, dicta error fuga. Id et explicabo quia nobis optio. Voluptates ipsum alias assumenda cupiditate voluptatem excepturi!',
     categoria: 'ss23'},
 
@@ -78,6 +78,6 @@ export const gFetch = (id) => {
 
         setTimeout(() => {
             resolve(id ? productos.find(prod => prod.id === id) : productos)
-        }, 1000);
+        }, 3000);
     })
 }

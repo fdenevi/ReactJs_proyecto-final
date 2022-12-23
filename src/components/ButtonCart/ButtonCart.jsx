@@ -8,7 +8,7 @@ const ButtonCart = () => {
             Finalizar compra
         </Link>
 
-        <Link to="/" className="comprar">
+        <Link to="/home" className="comprar">
             Seguir comprando
         </Link>
     </div>
