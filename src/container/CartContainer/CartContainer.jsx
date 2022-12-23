@@ -1,24 +1,24 @@
 import { useCartContext } from "../../context/CartContext"
 import Footer from "../../components/Footer/Footer"
 import './CartContainer.css'
+import ItemCart from "../../components/ItemCart/ItemCart"
 
 
 const CartContainer = () => {
 
-  const {cartList} = useCartContext()
+  const {cartList, vaciarCarrito} = useCartContext()
   console.log(cartList)
 
   return (
     <div>
       <div className="container cartProductCarrito">
           {cartList.map(product => 
-            <div key={product.id} id="productCarrito">
-              <p className="titleCarritoItem">{product.name}</p>
-              <p className="carritoItem">Cantidad: {product.cantidad}</p>
-              <p className="carritoItem">Talle: </p>
-              <p className="carritoItem">Precio: ${product.price * product.cantidad}</p>
-            </div>
+            <ItemCart 
+              key={product.id}
+              product={product}
+            />
           )}
+
       </div>
 
       <Footer />

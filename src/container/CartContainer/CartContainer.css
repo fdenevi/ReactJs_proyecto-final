@@ -13,28 +13,3 @@
     padding: 1em;
     text-align: center;
 }
-
-.titleCarritoItem{
-    color: #9a70b0;
-}
-
-
-@media (max-width: 894px) {
-    .titleCarritoItem{
-        font-size: 2em;
-    }
-
-    .carritoItem{
-        font-size: 2em;
-    }
-}
-
-@media (min-width: 895px) {
-    .titleCarritoItem{
-        font-size: 3em;
-    }
-
-    .carritoItem{
-        font-size: 3em;
-    }
-}

@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { Spinner } from "react-bootstrap"
-import { gFetch } from "../../helpers/gfetch"
 import ItemList from "../../components/ItemList/ItemList"
 import Titulo from "../../components/Titulo/Titulo"
 import './ItemListContainer.css'
 import Footer from "../../components/Footer/Footer"
+import { gFetch } from "../../helpers/gFetch"
 
 
 

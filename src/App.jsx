@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './container/ItemListContainer/ItemListContainer'
@@ -15,21 +15,21 @@ function App() {
   return (
     <CartContextProvider>
 
-    <BrowserRouter>
-      <NavBar />
+      <BrowserRouter>
+        <NavBar />
 
-      <Routes>
-        <Route path='/' element={<ItemListContainer/>} />
-        <Route path='/home' element={<ItemListContainer/>} />
-        <Route path='/categoria/:categoriaId' element={<ItemListContainer/>} />
-        <Route path='/detail/:productoId' element={<ItemDetailContainer/>} />
-        <Route path='/carrito' element={<CartContainer/>} />
-        <Route path='/dudas' element={<Dudas/>} />
-        <Route path='/contacto' element={<Contacto/>} />
-        <Route path='*' element={<Error/>} />
-      </Routes>    
+        <Routes>
+          <Route path='/' element={<ItemListContainer/>} />
+          <Route path='/home' element={<ItemListContainer/>} />
+          <Route path='/categoria/:categoriaId' element={<ItemListContainer/>} />
+          <Route path='/detail/:productoId' element={<ItemDetailContainer/>} />
+          <Route path='/carrito' element={<CartContainer/>} />
+          <Route path='/dudas' element={<Dudas/>} />
+          <Route path='/contacto' element={<Contacto/>} />
+          <Route path='*' element={<Error/>} />
+        </Routes>    
 
-    </BrowserRouter>
+      </BrowserRouter>
 
     </CartContextProvider>
   )
