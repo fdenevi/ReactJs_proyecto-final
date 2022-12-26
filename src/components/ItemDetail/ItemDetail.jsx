@@ -10,12 +10,11 @@ const ItemDetail = ({product}) => {
 
   const iva = 1.21
 
-  const {addToCart, cartList} = useCartContext();
+  const {addToCart} = useCartContext();
   const [inputType, setInputType] = useState('button');
 
 
   const onAdd = (cantidad) => {
-    console.log('Cantidad de productos: ', cantidad)
     addToCart ({...product, cantidad})
     setInputType('input')
   }

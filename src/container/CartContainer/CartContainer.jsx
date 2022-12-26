@@ -6,8 +6,9 @@ import ItemCart from "../../components/ItemCart/ItemCart"
 
 const CartContainer = () => {
 
-  const {cartList, vaciarCarrito} = useCartContext()
-  console.log(cartList)
+  const {cartList, vaciarCarrito, precioTotal} = useCartContext();
+  const iva = 1.21
+
 
   return (
     <div>
@@ -17,9 +18,9 @@ const CartContainer = () => {
               key={product.id}
               product={product}
             />
-          )}
-
-          <button>vaciar carrito</button>
+            )}
+          <label>{precioTotal()}</label>
+          <button onClick={vaciarCarrito}>vaciar carrito</button>
       </div>
 
       <Footer />

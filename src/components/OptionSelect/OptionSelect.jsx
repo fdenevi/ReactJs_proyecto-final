@@ -17,7 +17,6 @@ export default function OptionSelect() {
   
       function onAdd(value) {
           setOption(value);
-          console.log(value)
       }
         
       return (
