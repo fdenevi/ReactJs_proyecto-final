@@ -1,0 +1,43 @@
+#noProds{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3em;
+}
+
+.titleNoProduct{
+    text-align: center;
+    color: #b50000;
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.btnComprar{
+    font-family: 'Amatic SC', cursive;
+    border-radius: 50%;
+    font-size: 3em;
+    background-color: #d5e33f;
+    color: black;
+    text-decoration: none;
+    padding: 0.2em;
+}
+.btnComprar:hover{
+    background-color: #9a70b0;
+    color: black;
+}
+.btnComprar:active{
+    background-color: rgb(253, 241, 180);
+    color: black;
+}
+
+
+@media (max-width: 894px) {
+    .titleNoProduct{
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 895px) {
+    .titleNoProduct{
+        font-size: 4em;
+    }
+}

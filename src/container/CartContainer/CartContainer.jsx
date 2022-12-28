@@ -2,6 +2,7 @@ import { useCartContext } from "../../context/CartContext"
 import Footer from "../../components/Footer/Footer"
 import './CartContainer.css'
 import ItemCart from "../../components/ItemCart/ItemCart"
+import NoProds from "../../components/NoProds/NoProds"
 
 
 const CartContainer = () => {
@@ -26,7 +27,7 @@ const CartContainer = () => {
             <p>El total de su compra es de ${precioTotal()}</p>
             <button onClick={vaciarCarrito}>vaciar carrito</button>
           </div>
-        : <h1>no hay productos</h1>
+        : <NoProds />
         }
 
       </div>
