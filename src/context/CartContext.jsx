@@ -15,6 +15,7 @@ export const CartContextProvider = ({ children }) => {
                 ...cartList,
                 producto
             ])
+        // setear en localstorage
     }
     
 
@@ -22,14 +23,13 @@ export const CartContextProvider = ({ children }) => {
     const vaciarCarrito = () => setCartList([])
 
     // PRECIO TOTAL
-    const precioTotal = () => cartList.reduce((count, product) => count += (product.cantidad * product.price * iva))
+    const precioTotal = () => cartList.reduce((count, product) => count += (product.cantidad * product.price * iva), 0)
 
     // CANTIDAD TOTAL
     const cantidadTotal = () => cartList.reduce((count, product) => count += product.cantidad, 0)
 
     // ELIMINAR ITEM
     const eliminarItem = (id) => setCartList(cartList.filter(product => product.id != id))
-
 
 
   return (
@@ -42,7 +42,6 @@ export const CartContextProvider = ({ children }) => {
         eliminarItem,
     }}>
         {children}
-
     </CartContext.Provider>
   )
 }

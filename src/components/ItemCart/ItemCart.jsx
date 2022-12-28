@@ -8,7 +8,7 @@ const ItemCart = ({product}) => {
     const iva = 1.21
 
     return (
-        <div id="productCarrito">
+        <div id="itemCart">
             <p className="titleCarritoItem">{product.name}</p>
             <p className="carritoItem">Cantidad: {product.cantidad}</p>
             <p className="carritoItem">Talle: </p>

@@ -6,21 +6,29 @@ import ItemCart from "../../components/ItemCart/ItemCart"
 
 const CartContainer = () => {
 
-  const {cartList, vaciarCarrito, precioTotal} = useCartContext();
-  const iva = 1.21
+  const {cartList, vaciarCarrito, precioTotal, cantidadTotal} = useCartContext();
 
 
   return (
     <div>
-      <div className="container cartProductCarrito">
+      <div className="container">
+        <div id="productCarrito">
           {cartList.map(product => 
             <ItemCart 
-              key={product.id}
-              product={product}
+            key={product.id}
+            product={product}
             />
             )}
-          <label>{precioTotal()}</label>
-          <button onClick={vaciarCarrito}>vaciar carrito</button>
+        </div>
+
+        {cantidadTotal() > 0 ? 
+          <div id="cartCarrito">
+            <p>El total de su compra es de ${precioTotal()}</p>
+            <button onClick={vaciarCarrito}>vaciar carrito</button>
+          </div>
+        : <h1>no hay productos</h1>
+        }
+
       </div>
 
       <Footer />
