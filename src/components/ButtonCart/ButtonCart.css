@@ -1,30 +1,34 @@
 #comprar{
     display: flex;
     justify-content: center;
-    gap: 2em;
+    gap: 4em;
 }
 
 .comprar{
     text-decoration: none;
-    background-color: grey;
-    border-radius: 3em;
-    padding: 0.3em;
+    font-family: 'Amatic SC', cursive;
+    border-radius: 50%;
+    background-color: #9a70b0;
     color: black;
-    font-family: 'Courier New', Courier, monospace;
 }
 .comprar:hover{
-    color: #d5e33f;
+    background-color:#d5e33f;
+    color: black;
+}
+.comprar:active{
+    background-color: rgb(253, 241, 180);
+    color: black;
 }
 
 
 @media (max-width: 894px) {
     .comprar{
-        font-size: 1.5em;
+        font-size: 2em;
     }
 }
 
 @media (min-width: 895px) {
     .comprar{
-        font-size: 2em;
+        font-size: 3em;
     }
 }

@@ -20,15 +20,19 @@
 }
 
 .btnMasDetalles{
+    font-family: 'Amatic SC', cursive;
     text-decoration: none;
     background-color: grey;
-    border-radius: 3em;
-    padding: 0.3em;
+    border-radius: 50%;
     color: black;
-    font-size: 1.5em;
 }
 .btnMasDetalles:hover{
-    color: #d5e33f;
+    background-color: #d5e33f;
+    color: black;
+}
+.btnMasDetalles:active{
+    background-color: rgb(253, 241, 180);
+    color: black;
 }
 
 
@@ -42,7 +46,7 @@
     }
 
     .btnMasDetalles{
-        font-size: 1.5em;
+        font-size: 2em;
     }
 }
 
@@ -56,6 +60,6 @@
     }
 
     .btnMasDetalles{
-        font-size: 2em;
+        font-size: 3em;
     }
 }

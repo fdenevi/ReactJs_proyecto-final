@@ -9,6 +9,23 @@
     color: #9a70b0;
 }
 
+.btnEliminar{
+    font-family: 'Amatic SC', cursive;
+    border-radius: 50%;
+    background-color: #9a70b0;
+    color: black;
+    border: none;
+    padding: 0.2em;
+}
+.btnEliminar:hover{
+    background-color: #d05656;
+    color: black;
+}
+.btnEliminar:active{
+    background-color: rgb(253, 241, 180);
+    color: black;
+}
+
 
 @media (max-width: 894px) {
     .titleCarritoItem{
@@ -17,6 +34,10 @@
 
     .carritoItem{
         font-size: 2em;
+    }
+
+    .btnEliminar{
+        font-size: 1.5em;
     }
 }
 
@@ -27,5 +48,9 @@
 
     .carritoItem{
         font-size: 3em;
+    }
+
+    .btnEliminar{
+        font-size: 2em;
     }
 }

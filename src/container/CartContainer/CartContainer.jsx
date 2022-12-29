@@ -24,8 +24,8 @@ const CartContainer = () => {
 
         {cantidadTotal() > 0 ? 
           <div id="cartCarrito">
-            <p>El total de su compra es de ${precioTotal()}</p>
-            <button onClick={vaciarCarrito}>vaciar carrito</button>
+            <p className="titleTotalPrice">El total de su compra es de ${precioTotal()}</p>
+            <button onClick={vaciarCarrito} className="btnVaciarCarrito">vaciar carrito</button>
           </div>
         : <NoProds />
         }
