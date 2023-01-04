@@ -1,8 +1,9 @@
 #noProds{
     display: flex;
     flex-direction: column;
+    gap: 2em;
     align-items: center;
-    padding-bottom: 3em;
+    padding: 3em;
 }
 
 .titleNoProduct{

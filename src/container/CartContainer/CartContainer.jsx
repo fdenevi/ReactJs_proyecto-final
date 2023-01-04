@@ -1,30 +1,23 @@
 import { useCartContext } from "../../context/CartContext"
 import Footer from "../../components/Footer/Footer"
-import './CartContainer.css'
-import ItemCart from "../../components/ItemCart/ItemCart"
+import CartList from "../../components/CartList/CartList"
 import NoProds from "../../components/NoProds/NoProds"
 import Form from "../../components/Form/Form"
+import './CartContainer.css'
 
 
 const CartContainer = () => {
 
-  const {cartList, precioTotal, cantidadTotal} = useCartContext();
-
+  const { precioTotal, cantidadTotal } = useCartContext();
+  
 
   return (
-    <div>
-      <div className="container">
-        <div id="productCarrito">
-          {cartList.map(product => 
-            <ItemCart 
-            key={product.id}
-            product={product}
-            />
-            )}
-        </div>
-
+    <>
+      <div className="container">  
         {cantidadTotal() > 0 ?
         <> 
+          <CartList />
+          
           <div id="cartCarrito">
             <p className="titleTotalPrice">El total de su compra es de ${precioTotal()}</p>
           </div>
@@ -37,7 +30,7 @@ const CartContainer = () => {
       </div>
 
       <Footer />
-    </div>
+    </>
   )
 }
 

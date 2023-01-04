@@ -1,0 +1,8 @@
+#productCarrito{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+    font-family: 'Amatic SC', cursive;
+    padding: 2em;
+}

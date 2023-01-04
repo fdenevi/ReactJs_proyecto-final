@@ -63,6 +63,7 @@ const Form = () => {
               value={dataForm.name}
               placeholder="nombre y apellido"
               onChange={handleOnChange}
+              required
             />
 
             <label htmlFor="email">Email:</label>

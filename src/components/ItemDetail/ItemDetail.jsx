@@ -6,16 +6,16 @@ import OptionSelect from "../OptionSelect/OptionSelect"
 
 import './ItemDetail.css'
 
-const ItemDetail = ({product}) => {
+const ItemDetail = ({prod}) => {
 
   const iva = 1.21
 
-  const {addToCart} = useCartContext();
+  const { addToCart } = useCartContext();
   const [inputType, setInputType] = useState('button');
 
 
   const onAdd = (cantidad) => {
-    addToCart ({...product, cantidad})
+    addToCart ({...prod, cantidad})
     setInputType('input')
   }
   
@@ -23,14 +23,14 @@ const ItemDetail = ({product}) => {
   return (
     <div id="cartItemDetail">
       <div className="container">
-        <h2 className="nameProduct">{product.name}</h2>
-        <img src={product.foto} alt="imagen producto" className="img-fluid imgProduct" />
-        <p className="descriptionProduct">{product.descripcion}</p>
+        <h2 className="nameProduct">{prod.name}</h2>
+        <img src={prod.foto} alt="imagen producto" className="img-fluid imgProduct" />
+        <p className="descriptionProduct">{prod.descripcion}</p>
 
         <h3 className="titleTalle">Cual es tu talle?</h3>
         <OptionSelect />
 
-        <p className="priceProduct">${product.price * iva}</p>
+        <p className="priceProduct">${prod.price * iva}</p>
       </div>
 
       <div>

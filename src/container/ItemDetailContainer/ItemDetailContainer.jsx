@@ -8,7 +8,7 @@ import './ItemDetailContainer.css'
 
 const ItemDetailContainer = () => {
   
-  const [product, setProduct] = useState({})
+  const [prod, setProd] = useState({})
   const [loading, setLoading] = useState (true)
   const {productoId} = useParams()
 
@@ -18,7 +18,7 @@ const ItemDetailContainer = () => {
     const queryDoc = doc(db, 'productos', productoId)
 
     getDoc(queryDoc)
-    .then(respuesta => setProduct ({id: respuesta.id, ...respuesta.data()}))
+    .then(resp => setProd ({id: resp.id, ...resp.data()}))
     .catch(err => console.log(err))
     .finally( ()=> setLoading (false))
   })
@@ -27,7 +27,7 @@ const ItemDetailContainer = () => {
   return (
     <>
       {loading ? <p className="cargando">Cargando...</p> 
-        : <ItemDetail product={product}/>
+        : <ItemDetail prod={prod}/>
       }
       <div>
         <Footer/>
