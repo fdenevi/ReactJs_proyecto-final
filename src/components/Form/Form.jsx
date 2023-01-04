@@ -53,53 +53,64 @@ const Form = () => {
 
 
   return (
-    <>
-        <form onSubmit={finalizarCompra}>
-            <label htmlFor="name">Nombre y Apellido:</label>
-            <input 
-              type="text"
-              className="form-control"
-              name="name"
-              value={dataForm.name}
-              placeholder="nombre y apellido"
-              onChange={handleOnChange}
-              required
-            />
+        <form onSubmit={finalizarCompra} id="form">
+          <div className="inputForm">
+            <div>
+              <label htmlFor="name">Nombre y Apellido:</label>
+              <input
+                type="text"
+                className="formControl"
+                name="name"
+                value={dataForm.name}
+                placeholder="nombre y apellido"
+                onChange={handleOnChange}
+                required
+              />
+            </div>
 
-            <label htmlFor="email">Email:</label>
-            <input 
-              type="text" 
-              className="form-control"
-              name="email"
-              value={dataForm.email}
-              placeholder="email"
-              onChange={handleOnChange}
-            />
+            <div>
+              <label htmlFor="email">Email:</label>
+              <input 
+                type="text" 
+                className="formControl"
+                name="email"
+                value={dataForm.email}
+                placeholder="email"
+                onChange={handleOnChange}
+              />
+            </div>
 
-            <label htmlFor="email">Confirmar email:</label>
-            <input 
-              type="text" 
-              className="form-control"
-              name="email"
-              value={dataForm.email}
-              placeholder="email"
-              onChange={handleOnChange}
-            />
+            <div>
+              <label htmlFor="email">Confirmar email:</label>
+              <input 
+                type="text" 
+                className="formControl"
+                name="email"
+                value={dataForm.email}
+                placeholder="email"
+                onChange={handleOnChange}
+              />
+            </div>
 
-            <label htmlFor="phone">Celular:</label>
-            <input 
-              type="number" 
-              className="form-control"
-              name="phone"
-              value={dataForm.phone}
-              placeholder="celular"
-              onChange={handleOnChange}
-            />
+            <div>
+              <label htmlFor="phone">Celular:</label>
+              <input 
+                type="number" 
+                className="formControl"
+                name="phone"
+                value={dataForm.phone}
+                placeholder="celular"
+                onChange={handleOnChange}
+              />
+            </div>
+          </div>
 
-        <button className="btnForm">Finalizar compra</button>
-        <button onClick={cleanCart} className="btnForm">vaciar carrito</button>
+          <div className="btnForm">
+            <button className="btnFormStyle btnFormOk">Finalizar compra</button>
+            <button onClick={cleanCart} className="btnFormStyle btnFormClear">vaciar carrito</button>
+          </div>
+
         </form>
-    </>
   )
 }
 

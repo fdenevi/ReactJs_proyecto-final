@@ -1,28 +1,80 @@
+#form{
+    padding: 2em;
+}
+
+.inputForm{
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.formControl{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
 .btnForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+.btnFormStyle{
     font-family: 'Amatic SC', cursive;
     border-radius: 50%;
     background-color: #d05656;
     color: black;
     border: none;
 }
-.btnForm:hover{
+.btnFormStyle:hover{
     background-color: #d5e33f;
     color: black;
 }
-.btnForm:active{
+.btnFormStyle:active{
     background-color: rgb(253, 241, 180);
     color: black;
 }
 
 
 @media (max-width: 894px) {
-    .btnForm{
+    #form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3em;
+    }
+
+    .inputForm{
+        text-align: center;
+    }
+
+    .btnFormOk{
         font-size: 2em;
+    }
+    .btnFormClear{
+        font-size: 1.5em;
     }
 }
 
 @media (min-width: 895px) {
-    .btnForm{
+    #form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3em;
+    }
+
+    .inputForm{
+        text-align: left;
+    }
+
+    .btnFormOk{
         font-size: 3em;
+    }
+    .btnFormClear{
+        font-size: 2em;
     }
 }

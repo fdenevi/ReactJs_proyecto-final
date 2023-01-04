@@ -6,7 +6,6 @@ import './CartList.css'
 const CartList = () => {
 
     const { cartList } = useCartContext()
-    console.log(cartList)
 
     return (
       <div id="productCarrito">

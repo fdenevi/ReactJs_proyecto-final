@@ -15,7 +15,7 @@ const CartWidget = () => {
             <NavLink to='/carrito'>
               <FaShoppingCart id="iconCarrito"/>
             </NavLink>
-            {cantidadTotal() > 0 && cantidadTotal()}
+            <div id="numberCart">{cantidadTotal() > 0 && cantidadTotal()}</div>
         </Nav>
     </div>
   )

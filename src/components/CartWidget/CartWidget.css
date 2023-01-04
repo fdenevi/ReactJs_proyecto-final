@@ -4,6 +4,11 @@
     align-items: center;
     gap: 1em;
 }
+
+#numberCart{
+    font-size: 2.5em;
+    font-family: "Amatic SC", cursive;
+}
   
 #iconCarrito {
     color: #9a70b0;
