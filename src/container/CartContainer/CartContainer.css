@@ -18,39 +18,15 @@
     font-family: 'Cinzel Decorative', cursive;
 }
 
-.btnVaciarCarrito{
-    font-family: 'Amatic SC', cursive;
-    border-radius: 50%;
-    background-color: #d05656;
-    color: black;
-    border: none;
-}
-.btnVaciarCarrito:hover{
-    background-color: #d5e33f;
-    color: black;
-}
-.btnVaciarCarrito:active{
-    background-color: rgb(253, 241, 180);
-    color: black;
-}
-
 
 @media (max-width: 894px) {
     .titleTotalPrice{
-        font-size: 2em;
-    }
-
-    .btnVaciarCarrito{
         font-size: 2em;
     }
 }
 
 @media (min-width: 895px) {
     .titleTotalPrice{
-        font-size: 3em;
-    }
-
-    .btnVaciarCarrito{
         font-size: 3em;
     }
 }

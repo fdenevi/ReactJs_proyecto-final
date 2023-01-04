@@ -1,0 +1,28 @@
+.btnForm{
+    font-family: 'Amatic SC', cursive;
+    border-radius: 50%;
+    background-color: #d05656;
+    color: black;
+    border: none;
+}
+.btnForm:hover{
+    background-color: #d5e33f;
+    color: black;
+}
+.btnForm:active{
+    background-color: rgb(253, 241, 180);
+    color: black;
+}
+
+
+@media (max-width: 894px) {
+    .btnForm{
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 895px) {
+    .btnForm{
+        font-size: 3em;
+    }
+}

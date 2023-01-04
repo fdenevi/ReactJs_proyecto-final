@@ -8,7 +8,7 @@ import Form from "../../components/Form/Form"
 
 const CartContainer = () => {
 
-  const {cartList, vaciarCarrito, precioTotal, cantidadTotal} = useCartContext();
+  const {cartList, precioTotal, cantidadTotal} = useCartContext();
 
 
   return (
@@ -27,7 +27,6 @@ const CartContainer = () => {
         <> 
           <div id="cartCarrito">
             <p className="titleTotalPrice">El total de su compra es de ${precioTotal()}</p>
-            <button onClick={vaciarCarrito} className="btnVaciarCarrito">vaciar carrito</button>
           </div>
 
           <Form />

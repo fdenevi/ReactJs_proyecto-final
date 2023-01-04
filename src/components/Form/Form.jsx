@@ -1,6 +1,7 @@
 import { addDoc, collection, getFirestore } from "firebase/firestore"
 import { useState } from "react";
 import { useCartContext } from "../../context/CartContext";
+import './Form.css'
 
 
 const Form = () => {
@@ -11,7 +12,7 @@ const Form = () => {
         phone: "",
       })
     
-    const {cartList, precioTotal, vaciarCarrito} = useCartContext();
+    const {cartList, precioTotal, cleanCart} = useCartContext();
     
 
     const finalizarCompra = (evt) => {
@@ -30,7 +31,7 @@ const Form = () => {
         .then(resp => console.log(resp))
         .catch(err => console.log(err))
         .finally(() => {
-            vaciarCarrito()
+            cleanCart()
             setDataForm({
                 name: "",
                 email: "",
@@ -94,9 +95,9 @@ const Form = () => {
               onChange={handleOnChange}
             />
 
-        <button>Finalizar compra</button>
+        <button className="btnForm">Finalizar compra</button>
+        <button onClick={cleanCart} className="btnForm">vaciar carrito</button>
         </form>
-
     </>
   )
 }

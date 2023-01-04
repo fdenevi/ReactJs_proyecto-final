@@ -20,7 +20,7 @@ export const CartContextProvider = ({ children }) => {
     
 
     // VACIAR CARRITO
-    const vaciarCarrito = () => setCartList([])
+    const cleanCart = () => setCartList([])
 
     // PRECIO TOTAL
     const precioTotal = () => cartList.reduce((count, product) => count += (product.cantidad * product.price * iva), 0)
@@ -36,7 +36,7 @@ export const CartContextProvider = ({ children }) => {
     <CartContext.Provider value={{
         cartList,
         addToCart,
-        vaciarCarrito,
+        cleanCart,
         cantidadTotal,
         precioTotal,
         eliminarItem,
