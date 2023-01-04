@@ -22,7 +22,6 @@ const NavBar = () => {
                         <NavLink to='/home' id="navlink">Home</NavLink>
                         <NavLink to='/categoria/ss23' id="navlink">SS23</NavLink>
                         <NavLink to='/dudas' id="navlink">Dudas</NavLink>
-                        <NavLink to='/contacto' id="navlink">Contacto</NavLink>
                     </Nav>
                 </NavbarCollapse>
             </div>
