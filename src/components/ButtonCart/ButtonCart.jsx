@@ -5,7 +5,7 @@ const ButtonCart = () => {
   return (
     <div id="comprar">
         <Link to="/carrito" className="comprar">
-            Finalizar compra
+            Ir al carrito
         </Link>
 
         <Link to="/home" className="comprar">

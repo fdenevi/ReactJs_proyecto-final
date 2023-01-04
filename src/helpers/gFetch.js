@@ -78,6 +78,6 @@ export const gFetch = (id) => {
 
         setTimeout(() => {
             resolve(id ? productos.find(prod => prod.id === id) : productos)
-        }, 3000);
+        }, 2000);
     })
 }

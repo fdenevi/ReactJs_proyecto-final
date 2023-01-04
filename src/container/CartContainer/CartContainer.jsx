@@ -3,6 +3,7 @@ import Footer from "../../components/Footer/Footer"
 import './CartContainer.css'
 import ItemCart from "../../components/ItemCart/ItemCart"
 import NoProds from "../../components/NoProds/NoProds"
+import Form from "../../components/Form/Form"
 
 
 const CartContainer = () => {
@@ -22,11 +23,15 @@ const CartContainer = () => {
             )}
         </div>
 
-        {cantidadTotal() > 0 ? 
+        {cantidadTotal() > 0 ?
+        <> 
           <div id="cartCarrito">
             <p className="titleTotalPrice">El total de su compra es de ${precioTotal()}</p>
             <button onClick={vaciarCarrito} className="btnVaciarCarrito">vaciar carrito</button>
           </div>
+
+          <Form />
+        </>
         : <NoProds />
         }
 

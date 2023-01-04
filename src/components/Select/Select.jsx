@@ -5,7 +5,9 @@ function Select ({options, onSelect}) {
     >
       {
         options.map((val) => (
-            <option key={val.value}>{val.text}</option>
+            <option key={val.value}>
+              {val.text}
+            </option>
         ))
       }
     </select>
