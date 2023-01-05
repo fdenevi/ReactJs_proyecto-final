@@ -8,18 +8,18 @@ import './CartContainer.css'
 
 const CartContainer = () => {
 
-  const { precioTotal, cantidadTotal } = useCartContext();
+  const { totalPrice, totalQuantity } = useCartContext();
   
 
   return (
     <>
       <div className="container">  
-        {cantidadTotal() > 0 ?
+        {totalQuantity() > 0 ?
         <> 
           <CartList />
           
-          <div id="cartCarrito">
-            <p className="titleTotalPrice">El total de su compra es de ${precioTotal()}</p>
+          <div id="cartCart">
+            <p className="titleTotalPrice">El total de su compra es de ${totalPrice()}</p>
           </div>
 
           <Form />

@@ -5,7 +5,7 @@
     text-align: center;
 }
 
-.titleCarritoItem{
+.titleCartItem{
     color: #9a70b0;
 }
 
@@ -28,11 +28,11 @@
 
 
 @media (max-width: 894px) {
-    .titleCarritoItem{
-        font-size: 2em;
+    .titleCartItem{
+        font-size: 3em;
     }
 
-    .carritoItem{
+    .cartItem{
         font-size: 2em;
     }
 
@@ -42,12 +42,12 @@
 }
 
 @media (min-width: 895px) {
-    .titleCarritoItem{
-        font-size: 3em;
+    .titleCartItem{
+        font-size: 5em;
     }
 
-    .carritoItem{
-        font-size: 3em;
+    .cartItem{
+        font-size: 4em;
     }
 
     .btnEliminar{

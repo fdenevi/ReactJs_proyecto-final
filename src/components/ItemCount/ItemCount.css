@@ -1,4 +1,4 @@
-#contador{
+#accountant{
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -7,83 +7,83 @@
 
 
 /* BOTONES RESTAR Y SUMAR */
-#btnContador{
+#btnAccountant{
     display: flex;
     gap: 2em;
 }
 
-.btnContador{
+.btnAccountant{
     width: 50%;
     height: 50%;
     border-radius: 50%;
     font-size: 3em;
     background-color: #d5e33f;
 }
-.btnContador:hover{
+.btnAccountant:hover{
     background-color: #9a70b0;
     color: white;
 }
-.btnContador:active{
+.btnAccountant:active{
     background-color: rgb(253, 241, 180);
     color: black;
 }
 
-.btnContadorSuma{
+.btnAccountantSuma{
     padding: 0 0.4em;
 }
-.btnContadorResta{
+.btnAccountantResta{
     padding: 0 0.5em;
 }
 
 
-/* VALOR NUMERICO CONTADOR */
-.valorContador{
+/* VALOR NUMERICO accountant */
+.valiuAccountant{
     font-family: 'Cinzel Decorative', cursive;
 }
 
 
 /* BOTON AGREGAR AL CARRITO */
-.AgragarAcarrito{
+.btnAddToCart{
     font-family: 'Amatic SC', cursive;
     border-radius: 50%;
     background-color: #9a70b0;
     color: black;
     border: none;
 }
-.AgragarAcarrito:hover{
+.btnAddToCart:hover{
     background-color:#d5e33f;
     color: black;
 }
-.AgragarAcarrito:active{
+.btnAddToCart:active{
     background-color: rgb(253, 241, 180);
     color: black;
 }
 
 
 @media (max-width: 894px) {
-    .btnContador{
+    .btnAccountant{
         font-size: 2em;
     }
 
-    .valorContador{
+    .valiuAccountant{
         font-size: 3em;
     }
 
-    .AgragarAcarrito{
+    .btnAddToCart{
         font-size: 2em;
     }
 }
 
 @media (min-width: 895px) {
-    .btnContador{
+    .btnAccountant{
         font-size: 3em;
     }
 
-    .valorContador{
+    .valiuAccountant{
         font-size: 4em;
     }
 
-    .AgragarAcarrito{
+    .btnAddToCart{
         font-size: 3em;
     }
 }

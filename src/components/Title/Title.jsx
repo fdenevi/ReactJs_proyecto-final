@@ -1,6 +1,6 @@
-import './Titulo.css'
+import './Title.css'
 
-const Titulo = () => {
+const Title = () => {
   return (
     <div className='container'>
         <h1 id="title">Libra Shoes</h1>
@@ -10,4 +10,4 @@ const Titulo = () => {
   )
 }
 
-export default Titulo
+export default Title

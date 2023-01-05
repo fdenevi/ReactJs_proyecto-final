@@ -12,7 +12,7 @@
     font-family: 'Cinzel Decorative', cursive;
 }
 
-.btnComprar{
+.btnBuy{
     font-family: 'Amatic SC', cursive;
     border-radius: 50%;
     font-size: 3em;
@@ -20,11 +20,11 @@
     color: black;
     text-decoration: none;
 }
-.btnComprar:hover{
+.btnBuy:hover{
     background-color: #9a70b0;
     color: black;
 }
-.btnComprar:active{
+.btnBuy:active{
     background-color: rgb(253, 241, 180);
     color: black;
 }

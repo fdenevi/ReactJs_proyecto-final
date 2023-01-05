@@ -7,15 +7,15 @@ import './CartWidget.css'
 
 const CartWidget = () => {
 
-  const {cantidadTotal} = useCartContext()
+  const {totalQuantity} = useCartContext()
 
   return (
     <div>
-        <Nav id="carrito">
-            <NavLink to='/carrito'>
-              <FaShoppingCart id="iconCarrito"/>
+        <Nav id="cart">
+            <NavLink to='/cart'>
+              <FaShoppingCart id="iconCart"/>
             </NavLink>
-            <div id="numberCart">{cantidadTotal() > 0 && cantidadTotal()}</div>
+            <div id="numberCart">{totalQuantity() > 0 && totalQuantity()}</div>
         </Nav>
     </div>
   )

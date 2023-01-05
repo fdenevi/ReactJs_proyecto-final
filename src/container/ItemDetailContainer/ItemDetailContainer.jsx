@@ -10,12 +10,12 @@ const ItemDetailContainer = () => {
   
   const [prod, setProd] = useState({})
   const [loading, setLoading] = useState (true)
-  const {productoId} = useParams()
+  const {productId} = useParams()
 
 
   useEffect(() => {
     const db = getFirestore()
-    const queryDoc = doc(db, 'productos', productoId)
+    const queryDoc = doc(db, 'products', productId)
 
     getDoc(queryDoc)
     .then(resp => setProd ({id: resp.id, ...resp.data()}))

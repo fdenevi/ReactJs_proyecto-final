@@ -3,12 +3,12 @@ import './ButtonCart.css'
 
 const ButtonCart = () => {
   return (
-    <div id="comprar">
-        <Link to="/carrito" className="comprar">
+    <div id="buy">
+        <Link to="/cart" className="buy">
             Ir al carrito
         </Link>
 
-        <Link to="/home" className="comprar">
+        <Link to="/home" className="buy">
             Seguir comprando
         </Link>
     </div>

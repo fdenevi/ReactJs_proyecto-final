@@ -8,7 +8,7 @@ const CartList = () => {
     const { cartList } = useCartContext()
 
     return (
-      <div id="productCarrito">
+      <div id="productCart">
         {cartList.map((product) => 
           <Cart 
             key={product.id}

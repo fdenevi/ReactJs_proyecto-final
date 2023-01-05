@@ -18,7 +18,7 @@ export const CartContextProvider = ({ children }) => {
                 product
             ])
         } else {
-            cartList[idx].cantidad += product.cantidad
+            cartList[idx].quantity += product.quantity
             setCartList ([...cartList])
         }
         // setear en localstorage
@@ -28,13 +28,13 @@ export const CartContextProvider = ({ children }) => {
     const cleanCart = () => setCartList([])
 
     // PRECIO TOTAL
-    const precioTotal = () => cartList.reduce((count, product) => count += (product.cantidad * product.price * iva), 0)
+    const totalPrice = () => cartList.reduce((count, product) => count += (product.quantity * product.price * iva), 0)
 
-    // CANTIDAD TOTAL
-    const cantidadTotal = () => cartList.reduce((count, product) => count += product.cantidad, 0)
+    // quantity TOTAL
+    const totalQuantity = () => cartList.reduce((count, product) => count += product.quantity, 0)
 
     // ELIMINAR ITEM
-    const eliminarItem = (id) => setCartList(cartList.filter(product => product.id != id))
+    const deleteItem = (id) => setCartList(cartList.filter(product => product.id != id))
 
 
   return (
@@ -42,9 +42,9 @@ export const CartContextProvider = ({ children }) => {
         cartList,
         addToCart,
         cleanCart,
-        cantidadTotal,
-        precioTotal,
-        eliminarItem,
+        totalQuantity,
+        totalPrice,
+        deleteItem,
     }}>
         { children }
     </CartContext.Provider>

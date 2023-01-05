@@ -1,4 +1,4 @@
-#carrito {
+#cart {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -10,18 +10,18 @@
     font-family: "Amatic SC", cursive;
 }
   
-#iconCarrito {
+#iconCart {
     color: #9a70b0;
 }
 
 @media (max-width: 894px) {
-    #iconCarrito {
+    #iconCart {
       font-size: 2.5em;
     }
 }
 
 @media (min-width: 895px) {
-    #iconCarrito {
+    #iconCart {
         font-size: 3.5em;
     }
 }

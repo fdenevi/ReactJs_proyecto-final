@@ -1,34 +1,34 @@
-#comprar{
+#buy{
     display: flex;
     justify-content: center;
     gap: 4em;
 }
 
-.comprar{
+.buy{
     text-decoration: none;
     font-family: 'Amatic SC', cursive;
     border-radius: 50%;
     background-color: #9a70b0;
     color: black;
 }
-.comprar:hover{
+.buy:hover{
     background-color:#d5e33f;
     color: black;
 }
-.comprar:active{
+.buy:active{
     background-color: rgb(253, 241, 180);
     color: black;
 }
 
 
 @media (max-width: 894px) {
-    .comprar{
+    .buy{
         font-size: 2em;
     }
 }
 
 @media (min-width: 895px) {
-    .comprar{
+    .buy{
         font-size: 3em;
     }
 }

@@ -12,19 +12,17 @@ const Form = () => {
         phone: "",
       })
     
-    const {cartList, precioTotal, cleanCart} = useCartContext();
+    const {cartList, totalPrice, cleanCart} = useCartContext();
     
 
-    const finalizarCompra = (evt) => {
+    const endBuy = (evt) => {
         evt.preventDefault()
     
         const order = {}
         order.buyer = dataForm
         order.item = cartList.map( ({name, id, price}) => ({name, id, price}) )
-        order.total = precioTotal()
-        console.log(order)
+        order.total = totalPrice()
     
-
         const db = getFirestore()
         const queryOrder = collection(db, 'orders')
         addDoc (queryOrder, order)
@@ -53,7 +51,7 @@ const Form = () => {
 
 
   return (
-        <form onSubmit={finalizarCompra} id="form">
+        <form onSubmit={endBuy} id="form">
           <div className="inputForm">
             <div>
               <label htmlFor="name">Nombre y Apellido:</label>
@@ -77,6 +75,7 @@ const Form = () => {
                 value={dataForm.email}
                 placeholder="email"
                 onChange={handleOnChange}
+                required
               />
             </div>
 
@@ -89,6 +88,7 @@ const Form = () => {
                 value={dataForm.email}
                 placeholder="email"
                 onChange={handleOnChange}
+                required
               />
             </div>
 
@@ -101,6 +101,7 @@ const Form = () => {
                 value={dataForm.phone}
                 placeholder="celular"
                 onChange={handleOnChange}
+                required
               />
             </div>
           </div>

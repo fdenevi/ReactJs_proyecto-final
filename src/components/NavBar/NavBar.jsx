@@ -20,8 +20,8 @@ const NavBar = () => {
                 <NavbarCollapse id="responsive-navbar-nav">
                     <Nav className="me-auto" id="navbarnav">
                         <NavLink to='/home' id="navlink">Home</NavLink>
-                        <NavLink to='/categoria/ss23' id="navlink">SS23</NavLink>
-                        <NavLink to='/dudas' id="navlink">Dudas</NavLink>
+                        <NavLink to='/category/ss23' id="navlink">SS23</NavLink>
+                        <NavLink to='/questions' id="navlink">Dudas</NavLink>
                     </Nav>
                 </NavbarCollapse>
             </div>

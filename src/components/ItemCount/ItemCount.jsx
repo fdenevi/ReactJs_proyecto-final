@@ -3,34 +3,34 @@ import './ItemCount.css'
 
 const ItemCount = ({stock, initial, onAdd}) => {
     
-    const [contador, setearContador] = useState(1)
-    const agregarAlCarrito = () => onAdd(contador)
+    const [accountant, setearaccountant] = useState(1)
+    const addToCart = () => onAdd(accountant)
     
     
     // FUNCION SUMAR
     const sumar = () => {
-        if(contador < stock){
-          setearContador (contador + 1)
+        if(accountant < stock){
+          setearaccountant (accountant + 1)
         }
       }
 
     // FUNCION RESTAR
     const restar = () => {
-      if (contador > initial) {
-        setearContador (contador - 1)
+      if (accountant > initial) {
+        setearaccountant (accountant - 1)
       }
     }
 
 
   return (
-    <div id="contador">
-        <div id="btnContador">
-          <button className="btnContador btnContadorSuma" onClick={sumar}>+</button>
-          <button className="btnContador btnContadorResta" onClick={restar}>-</button>
+    <div id="accountant">
+        <div id="btnAccountant">
+          <button className="btnAccountant btnAccountantSuma" onClick={sumar}>+</button>
+          <button className="btnAccountant btnAccountantResta" onClick={restar}>-</button>
         </div>
-      <p className="valorContador">{contador}</p>
+      <p className="valiuAccountant">{accountant}</p>
 
-      <button className="AgragarAcarrito" onClick={agregarAlCarrito}>Agregar al carrito</button>
+      <button className="btnAddToCart" onClick={addToCart}>Agregar al carrito</button>
     </div>
   )
 }
