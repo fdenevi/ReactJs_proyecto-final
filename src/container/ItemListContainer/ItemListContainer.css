@@ -1,17 +1,17 @@
+/* LOADING */
 #cardLoading{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .loading{
     font-family: 'Amatic SC', cursive;
 }
-
 .spinner{
     color: #9a70b0;
 }
 
+/* CARD PRODUCTOS */
 #cardProds{
     margin-bottom: 4em;
 }

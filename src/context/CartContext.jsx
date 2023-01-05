@@ -3,8 +3,12 @@ import { useState, createContext, useContext } from "react";
 const iva = 1.21
 const CartContext = createContext([])
 
+
+// CART CONTEXT OBJECT
 export const useCartContext = () => useContext(CartContext)
 
+
+// INCORPORANDO PRODUCTOS A CARTLIST
 export const CartContextProvider = ({ children }) => {
     const [cartList, setCartList]=useState([])
 
@@ -21,7 +25,6 @@ export const CartContextProvider = ({ children }) => {
             cartList[idx].quantity += product.quantity
             setCartList ([...cartList])
         }
-        // setear en localstorage
     }
 
     // VACIAR CARRITO
@@ -30,7 +33,7 @@ export const CartContextProvider = ({ children }) => {
     // PRECIO TOTAL
     const totalPrice = () => cartList.reduce((count, product) => count += (product.quantity * product.price * iva), 0)
 
-    // quantity TOTAL
+    // CANTIDAD TOTAL
     const totalQuantity = () => cartList.reduce((count, product) => count += product.quantity, 0)
 
     // ELIMINAR ITEM

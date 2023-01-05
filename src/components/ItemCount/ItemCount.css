@@ -1,3 +1,4 @@
+/* CONTADOR */
 #accountant{
     text-align: center;
     display: flex;
@@ -5,13 +6,11 @@
     align-items: center;
 }
 
-
 /* BOTONES RESTAR Y SUMAR */
 #btnAccountant{
     display: flex;
     gap: 2em;
 }
-
 .btnAccountant{
     width: 50%;
     height: 50%;
@@ -28,19 +27,20 @@
     color: black;
 }
 
+/* BOTON SUMAR */
 .btnAccountantSuma{
     padding: 0 0.4em;
 }
+
+/* BOTON RESTAR */
 .btnAccountantResta{
     padding: 0 0.5em;
 }
 
-
-/* VALOR NUMERICO accountant */
+/* VALOR CANTIDAD */
 .valiuAccountant{
     font-family: 'Cinzel Decorative', cursive;
 }
-
 
 /* BOTON AGREGAR AL CARRITO */
 .btnAddToCart{

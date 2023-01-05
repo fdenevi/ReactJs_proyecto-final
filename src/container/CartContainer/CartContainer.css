@@ -1,3 +1,4 @@
+/* CARRITO */
 #cartCart{
     display: flex;
     flex-direction: column;
@@ -5,6 +6,7 @@
     padding-bottom: 2em;
 }
 
+/* PRECIO TOTAL */
 .titleTotalPrice{
     font-family: 'Cinzel Decorative', cursive;
     text-align: center;

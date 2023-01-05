@@ -1,8 +1,10 @@
+/* FOOTER */
 #footer{
     padding: 4em;
     background-color: black;
 }
 
+/* TITULO FOOTER */
 .titleFooter{
     font-family: 'Amatic SC', cursive;
     color: white;
@@ -10,6 +12,7 @@
     text-align: center;
 }
 
+/* ICONOS FOOTER */
 .iconsFooter{
     display: flex;
     justify-content: center;

@@ -1,0 +1,19 @@
+/* TITULO ALERT */
+.swal2-title{
+    font-family: 'Amatic SC', cursive;
+    font-size: 4em;
+}
+
+/* SUBTITULO ALERT */
+.swal2-html-container{
+    font-size: 2em;
+}
+
+/* BOTON CONFIRMAR ALERT */
+.swal2-styled.swal2-confirm{
+    background-color: #9a70b0;
+}
+.swal2-styled.swal2-confirm:hover{
+    background-color: #d5e33f;
+    color: black;
+}

@@ -1,6 +1,7 @@
 import './Title.css'
 
 const Title = () => {
+  
   return (
     <div className='container'>
         <h1 id="title">Libra Shoes</h1>

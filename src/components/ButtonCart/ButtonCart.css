@@ -1,9 +1,11 @@
+/* CART BOTONES VACIAR O FINALIZAR COMPRA */
 #buy{
     display: flex;
     justify-content: center;
     gap: 4em;
 }
 
+/* BOTONES VACIAR O FINALIZAR COMPRA */
 .buy{
     text-decoration: none;
     font-family: 'Amatic SC', cursive;

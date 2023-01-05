@@ -1,15 +1,16 @@
+/* NAVBAR */
 #navbar {
     background-color: rgb(253, 241, 180);
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 #navbarnav {
     display: flex;
     flex-direction: row;
 }
 
+/* LINKS DE NAVBAR */
 #navlink {
     font-family: "Amatic SC", cursive;
     text-decoration: none;
@@ -21,17 +22,16 @@
 #navlink:active {
     color: #d5e33f;
 }
-  
+
+/* ICONOS CARRITO Y MENU HAMBURGUESA */
 #icons {
     display: flex;
     align-items: center;
     gap: 1em;
 }
-  
 #iconMenu {
     font-size: 2em;
 }
-  
 #navbarToggle {
     border: none;
 }

@@ -1,14 +1,17 @@
-#CartList{
+/* PRODUCTOS CARRITO */
+#cartList{
     border: solid 0.3em #d5e33f;
     border-radius: 1em;
     padding: 1em;
     text-align: center;
 }
 
+/* TITULO PRODUCTOS CARRITO */
 .titleCartItem{
     color: #9a70b0;
 }
 
+/* BOTON ELIMINAR PRODUCTO */
 .btnEliminar{
     font-family: 'Amatic SC', cursive;
     border-radius: 50%;

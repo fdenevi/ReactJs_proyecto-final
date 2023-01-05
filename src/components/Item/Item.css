@@ -1,3 +1,4 @@
+/* PRODUCTOS */
 .cards{
     display: flex;
     flex-direction: column;
@@ -8,18 +9,21 @@
     max-width: 70%;
 }
 
+/* TITULO PRODUCTOS */
 .titleProds{
     text-align: center;
     font-family: 'Cinzel Decorative', cursive;
     padding-top: 1em;
 }
 
+/* PRECIO PRODUCTOS */
 .price{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
 }
 
+/* BOTON MAS DETALLES */
 .btnMasDetalles{
     font-family: 'Amatic SC', cursive;
     text-decoration: none;

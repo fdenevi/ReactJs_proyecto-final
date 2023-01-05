@@ -2,7 +2,7 @@ import { useCartContext } from "../../context/CartContext"
 import Footer from "../../components/Footer/Footer"
 import CartList from "../../components/CartList/CartList"
 import NoProds from "../../components/NoProds/NoProds"
-import Form from "../../components/Form/Form"
+import FormList from "../../components/FormList/FormList"
 import './CartContainer.css'
 
 
@@ -22,7 +22,7 @@ const CartContainer = () => {
             <p className="titleTotalPrice">El total de su compra es de ${totalPrice()}</p>
           </div>
 
-          <Form />
+          <FormList />
         </>
         : <NoProds />
         }

@@ -1,3 +1,4 @@
+/* TITULO ERROR */
 .titleError{
     font-family: 'Cinzel Decorative', cursive;
     text-align: center;
@@ -5,6 +6,7 @@
     color: red;
 }
 
+/* SUBTITULO ERROR */
 .subtitleError{
     font-family: 'Amatic SC', cursive;
     text-align: center;

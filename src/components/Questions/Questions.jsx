@@ -2,6 +2,7 @@ import Footer from '../Footer/Footer'
 import './Questions.css'
 
 const Questions = () => {
+  
   return (
     <div>
       <div className="container cartQuestions">

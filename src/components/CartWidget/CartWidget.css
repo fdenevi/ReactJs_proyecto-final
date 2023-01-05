@@ -1,3 +1,4 @@
+/* CARRITO */
 #cart {
     display: flex;
     flex-direction: row;
@@ -5,14 +6,17 @@
     gap: 1em;
 }
 
+/* NUMERO CARRITO */
 #numberCart{
     font-size: 2.5em;
     font-family: "Amatic SC", cursive;
 }
-  
+
+/* ICONO CARRITO */
 #iconCart {
     color: #9a70b0;
 }
+
 
 @media (max-width: 894px) {
     #iconCart {
