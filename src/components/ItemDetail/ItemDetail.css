@@ -8,6 +8,12 @@
     padding: 1em;
 }
 
+.imgProduct{
+    max-width: 50%;
+    height: auto;
+    border-radius: 10%;
+}
+
 .descriptionProduct{
     font-family: 'Amatic SC', cursive;
     padding: 1em;

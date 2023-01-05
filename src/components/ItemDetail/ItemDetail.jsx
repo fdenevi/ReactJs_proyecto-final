@@ -24,7 +24,7 @@ const ItemDetail = ({prod}) => {
     <div id="cartItemDetail">
       <div className="container">
         <h2 className="nameProduct">{prod.name}</h2>
-        <img src={prod.photo} alt="imagen producto" className="img-fluid imgProduct" />
+        <img src={prod.photo} alt="imagen producto" className="imgProduct" />
         <p className="descriptionProduct">{prod.description}</p>
 
         <h3 className="titleSize">Cual es tu talle?</h3>

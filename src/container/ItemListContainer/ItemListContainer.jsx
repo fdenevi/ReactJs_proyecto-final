@@ -18,7 +18,7 @@ const ItemListContainer = () => {
     useEffect (() => {
       const db = getFirestore()
       const queryCollection = collection(db, 'products')
-      const queryFilter = categoryId ? query(queryCollection, where('category', '==', 'ss23')) : queryCollection
+      const queryFilter = categoryId ? query(queryCollection, where('category', '==', categoryId)) : queryCollection
 
         getDocs(queryFilter)
           .then (resp => setProducts (resp.docs.map (product => ({id: product.id, ...product.data() }) )))

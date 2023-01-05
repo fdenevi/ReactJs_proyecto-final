@@ -21,6 +21,7 @@ const NavBar = () => {
                     <Nav className="me-auto" id="navbarnav">
                         <NavLink to='/home' id="navlink">Home</NavLink>
                         <NavLink to='/category/ss23' id="navlink">SS23</NavLink>
+                        <NavLink to='/category/novia' id="navlink">Novia</NavLink>
                         <NavLink to='/questions' id="navlink">Dudas</NavLink>
                     </Nav>
                 </NavbarCollapse>

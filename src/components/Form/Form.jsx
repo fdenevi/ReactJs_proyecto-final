@@ -22,11 +22,12 @@ const Form = () => {
         order.buyer = dataForm
         order.item = cartList.map( ({name, id, price}) => ({name, id, price}) )
         order.total = totalPrice()
+        console.log(order)
     
         const db = getFirestore()
         const queryOrder = collection(db, 'orders')
         addDoc (queryOrder, order)
-        .then(resp => console.log(resp))
+        .then (resp => console.log(resp))
         .catch(err => console.log(err))
         .finally(() => {
             cleanCart()
@@ -36,7 +37,8 @@ const Form = () => {
                 phone: "",
             })
             Swal.fire(
-                'Compra realizada con exito!'
+                'Compra realizada con exito!',
+                'En instantes recibiras un email con la información de tu compra',
               )
         })
     }
@@ -47,7 +49,6 @@ const Form = () => {
             [e.target.name] : e.target.value
         })
     }
-
 
 
   return (
