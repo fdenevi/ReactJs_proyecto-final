@@ -30,9 +30,10 @@ const FormList = () => {
         .then (resp => 
           Swal.fire({
             icon: 'success',
-            title: 'Su número de orden es:',
-            text: resp.id,
-            confirmButtonText: 'OK',
+            title: 'COMPRA REALIZADA CON ÉXITO!',
+            text: 'Su número de orden es:',
+            footer: resp.id,
+            showConfirmButton: false,
           })
         )
         .catch(err => console.log(err))
