@@ -1,6 +1,6 @@
 # Denevi Florencia
 ## _Libra Shoes_
-### Demo: https://nodesource.com/products/nsolid
+### Demo: https://libra-shoes.netlify.app/
 E-commerce realizado en React Js (comision 37095).
 
 ## Features
