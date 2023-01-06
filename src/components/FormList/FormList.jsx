@@ -11,10 +11,9 @@ const FormList = () => {
         name: "",
         email: "",
         phone: "",
-      })
-    
+      });
+
     const {cartList, totalPrice, cleanCart} = useCartContext();
-    
 
     const endBuy = (evt) => {
         evt.preventDefault()
@@ -23,23 +22,27 @@ const FormList = () => {
         order.buyer = dataForm
         order.item = cartList.map( ({name, id, price}) => ({name, id, price}) )
         order.total = totalPrice()
-    
+
         const db = getFirestore()
+
         const queryOrder = collection(db, 'orders')
         addDoc (queryOrder, order)
-        // .then (resp => console.log(resp))
+        .then (resp => 
+          Swal.fire({
+            icon: 'success',
+            title: 'Su número de orden es:',
+            text: resp.id,
+            confirmButtonText: 'OK',
+          })
+        )
         .catch(err => console.log(err))
         .finally(() => {
-            cleanCart()
-            setDataForm({
-                name: "",
-                email: "",
-                phone: "",
-            })
-            Swal.fire(
-                'Compra realizada con exito!',
-                'En instantes recibiras un email con la información de tu compra',
-              )
+          cleanCart()
+          setDataForm({
+            name: "",
+            email: "",
+            phone: "",
+          })          
         })
     }
 
