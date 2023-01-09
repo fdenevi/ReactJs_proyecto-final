@@ -12,7 +12,7 @@
 }
 
 /* BOTON ELIMINAR PRODUCTO */
-.btnEliminar{
+.btnRemove{
     font-family: 'Amatic SC', cursive;
     border-radius: 50%;
     background-color: #9a70b0;
@@ -20,11 +20,11 @@
     border: none;
     padding: 0.2em;
 }
-.btnEliminar:hover{
+.btnRemove:hover{
     background-color: #d05656;
     color: black;
 }
-.btnEliminar:active{
+.btnRemove:active{
     background-color: rgb(253, 241, 180);
     color: black;
 }
@@ -39,7 +39,7 @@
         font-size: 2em;
     }
 
-    .btnEliminar{
+    .btnRemove{
         font-size: 1.5em;
     }
 }
@@ -53,7 +53,7 @@
         font-size: 4em;
     }
 
-    .btnEliminar{
+    .btnRemove{
         font-size: 2em;
     }
 }

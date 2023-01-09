@@ -12,7 +12,7 @@ const Cart = ({product}) => {
       <p className="titleCartItem">{product.name}</p>
       <p className="cartItem">Cantidad: {product.quantity}</p>
       <p className="cartItem">Precio: ${product.quantity * product.price * iva}</p>
-      <button onClick={() => deleteItem(product.id)} className="btnEliminar">eliminar</button>
+      <button onClick={() => deleteItem(product.id)} className="btnRemove">eliminar</button>
     </div>
   )
 }
