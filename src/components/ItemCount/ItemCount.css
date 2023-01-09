@@ -17,6 +17,7 @@
     border-radius: 50%;
     font-size: 3em;
     background-color: #d5e33f;
+    color: black;
 }
 .btnAccountant:hover{
     background-color: #9a70b0;
