@@ -8,10 +8,10 @@ import './FormList.css'
 const FormList = () => {
 
     const [dataForm, setDataForm] = useState({
-        name: "Federico",
-        email: "fede@gmail.com",
-        email2: "fede@gmail.com",
-        phone: "113054867",
+        name: "",
+        email: "",
+        email2: "",
+        phone: "",
       });
 
     const {cartList, totalPrice, cleanCart} = useCartContext();
